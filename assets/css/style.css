@@ -308,6 +308,27 @@ a:focus {
     background-size: cover;
 }
 
+#twrap {
+	background: url(../img/t-back.jpg) no-repeat center top;
+	margin-top: 0px;
+	padding-top:60px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #twrap i {
 	font-size: 50px;
 	color: white;
@@ -336,6 +357,11 @@ a:focus {
 #footerwrap {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	background: #384452;
+}
+#footerwrap2 {
+	padding-top: 25px;
+	padding-bottom: 25px;
 	background: #384452;
 }
 

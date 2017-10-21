@@ -6,12 +6,13 @@ class Login_test extends TestCase {
 		$output = $this->request('GET', 'Login/index');
 		$this->assertContains('Booking', $output); 
 	}
-        public function test_aksi_login() //ini ga kebaca.. aku gatau apa salahnya..
+        public function test_aksi_login()
     {
-        $_SESSION['id_user'] = "1";
-        $_SESSION['username'] = "umar";
         
-        $output = $this->request('GET', 'Login/aksi_login');
+        $output = $this->request('POST', 'Login/aksi_login', 
+					['username' => 'umar',
+					 'password' => 'siapmaju'
+					 ]);
         $this->assertRedirect('Authen');
     }
     

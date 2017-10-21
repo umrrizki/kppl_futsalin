@@ -20,22 +20,19 @@ class Login extends CI_Controller{
 		$cek = $this->Model_futsal->cek_login($username,$password);
 		if($cek->num_rows() == 1){
  
- foreach ($cek -> result() as $data) {
+			foreach ($cek -> result() as $data) {
 				$data_session['id_user'] = $data->id_user;
 				$data_session['username'] = $data->username;
-			$this->session->set_userdata($data_session);
+				$this->session->set_userdata($data_session);
 			}
 			
 			redirect('Authen');
  
-		}else{
-                  $this->session->set_flashdata('pesan', 'Username dan password salah!');
-			redirect('Login');
-		}
-       
-	}
- function keluar(){
+		} else{
+            $this->session->set_flashdata('pesan', 'Username dan password salah!');
+	redirect('Login'); } }
+
+	function keluar(){
 		$this->session->sess_destroy();
-		redirect('Login');
-	}
+	redirect('Login'); }
 }

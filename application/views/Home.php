@@ -46,9 +46,9 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href=<?php echo base_url()."index.php"?>>HOME</a></li>
-            <li><a href=<?php echo site_url()."About.php"?>>BOOKING</a></li>
-            <li><a href=<?php echo base_url()."contact.php"?>>PROFIL</a></li>
+            <li class="active"><a href=<?php echo site_url()."/Home"?>>HOME</a></li>
+            <li><a href="">BOOKING</a></li>
+            <li><a href="">PROFIL</a></li>
             <li><a href=<?php echo site_url("Logout")?>>LOGOUT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -84,19 +84,19 @@
  					<i class="fa fa-heart-o"></i>
  					<h4>Praktis</h4>
  					<p>Sistem ini bisa di akses di manapun kamu berada! Praktis digunakan di gadget manapun!</p>
- 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+ 					<!--<p><br/><a href="#" class="btn btn-theme">More Info</a></p>-->
  				</div>
  				<div class="col-md-4">
  					<i class="fa fa-flask"></i>
  					<h4>Mudah Digunakan</h4>
  					<p>Sistem ini mudah digunakan. Hanya klik Booking dan temukan lapangan yang ingin kamu tuju!</p>
- 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+ 				<!--	<p><br/><a href="#" class="btn btn-theme">More Info</a></p>-->
  				</div>
  				<div class="col-md-4">
  					<i class="fa fa-trophy"></i>
  					<h4>Terpercaya</h4>
  					<p>Sistem ini terpercaya dibuktikan dengan sudah banyak partner yang berkerja sama bersama kami</p>
- 					<p><br/><a href="#cwrap" class="btn btn-theme">More Info</a></p>
+ 				<!--	<p><br/><a href="#cwrap" class="btn btn-theme">More Info</a></p>-->
  				</div>		 				
 	 		</div>
 	 	</div><! --/container -->

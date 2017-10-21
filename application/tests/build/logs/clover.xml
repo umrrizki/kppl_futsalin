@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1508510379">
-  <project timestamp="1508510379">
-    <file name="D:\ITS\SI\sem5\kppl\kppl_futsalin\application/controllers/Authen.php">
+<coverage generated="1508572345">
+  <project timestamp="1508572345">
+    <file name="C:\xampp\htdocs\kppl_futsalin\application/controllers/Authen.php">
       <class name="Authen" namespace="global">
         <metrics methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="3" elements="10" coveredelements="4"/>
       </class>
@@ -17,7 +17,7 @@
       <line num="21" type="stmt" count="0"/>
       <metrics loc="24" ncloc="18" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="3" elements="10" coveredelements="3"/>
     </file>
-    <file name="D:\ITS\SI\sem5\kppl\kppl_futsalin\application/controllers/Home.php">
+    <file name="C:\xampp\htdocs\kppl_futsalin\application/controllers/Home.php">
       <class name="Home" namespace="global">
         <metrics methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="3" elements="10" coveredelements="4"/>
       </class>
@@ -33,7 +33,7 @@
       <line num="18" type="stmt" count="0"/>
       <metrics loc="21" ncloc="21" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="3" elements="10" coveredelements="3"/>
     </file>
-    <file name="D:\ITS\SI\sem5\kppl\kppl_futsalin\application/controllers/Login.php">
+    <file name="C:\xampp\htdocs\kppl_futsalin\application/controllers/Login.php">
       <class name="Login" namespace="global">
         <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="12" elements="22" coveredelements="15"/>
       </class>
@@ -61,7 +61,7 @@
       <line num="40" type="stmt" count="0"/>
       <metrics loc="40" ncloc="40" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="12" elements="22" coveredelements="13"/>
     </file>
-    <file name="D:\ITS\SI\sem5\kppl\kppl_futsalin\application/models/Model_futsal.php">
+    <file name="C:\xampp\htdocs\kppl_futsalin\application/models/Model_futsal.php">
       <class name="Model_futsal" namespace="global" fullPackage="Model">
         <metrics methods="7" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="3" elements="23" coveredelements="4"/>
       </class>
@@ -90,7 +90,7 @@
       <line num="33" type="stmt" count="0"/>
       <metrics loc="34" ncloc="34" classes="1" methods="7" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="3" elements="23" coveredelements="4"/>
     </file>
-    <file name="D:\ITS\SI\sem5\kppl\kppl_futsalin\application/models/Modelku.php">
+    <file name="C:\xampp\htdocs\kppl_futsalin\application/models/Modelku.php">
       <class name="Modelku" namespace="global">
         <metrics methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="20" coveredelements="0"/>
       </class>

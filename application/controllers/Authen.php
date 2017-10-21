@@ -10,7 +10,7 @@ class Authen extends CI_Controller{
 		
   $this->load->helper('url');
         
-        $this->load->database();
+        $this->load->database('futsalin');
 	}
  
 	function index(){

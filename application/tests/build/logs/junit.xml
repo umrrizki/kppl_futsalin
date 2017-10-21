@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="9" assertions="10" failures="5" errors="1" time="1.291710">
-    <testsuite name="Authen_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Authen_test.php" fullPackage="Authen" tests="1" assertions="1" failures="1" errors="0" time="0.335116">
-      <testcase name="test_index" class="Authen_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Authen_test.php" line="4" assertions="1" time="0.335116">
+  <testsuite name="CodeIgniter Application Test Suite" tests="6" assertions="7" failures="4" errors="1" time="0.207361">
+    <testsuite name="Authen_test" file="C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Authen_test.php" fullPackage="Authen" tests="1" assertions="1" failures="1" errors="0" time="0.039012">
+      <testcase name="test_index" class="Authen_test" file="C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Authen_test.php" line="4" assertions="1" time="0.039012">
         <failure type="PHPUnit_Framework_ExpectationFailedException">Authen_test::test_index
 URL to redirect is not Redirect to http://localhost/kppllap/index.php/Home but Redirect to http://localhost/kppllap/index.php/Login.
 Failed asserting that two strings are identical.
@@ -12,22 +12,22 @@ Failed asserting that two strings are identical.
 -Redirect to http://localhost/kppllap/index.php/Home
 +Redirect to http://localhost/kppllap/index.php/Login
 
-C:\xampp\htdocs\kppllap\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:426
-D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Authen_test.php:7
+C:\xampp\htdocs\kppl_futsalin\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:426
+C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Authen_test.php:7
 </failure>
       </testcase>
     </testsuite>
-    <testsuite name="Home_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Home_test.php" fullPackage="Home" tests="1" assertions="0" failures="0" errors="1" time="0.044741">
-      <testcase name="test_index" class="Home_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Home_test.php" line="4" assertions="0" time="0.044741">
+    <testsuite name="Home_test" file="C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Home_test.php" fullPackage="Home" tests="1" assertions="0" failures="0" errors="1" time="0.028469">
+      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Home_test.php" line="4" assertions="0" time="0.028469">
         <error type="PHPUnit_Framework_Exception">Home_test::test_index
 PHPUnit_Framework_Exception: Argument #2 of PHPUnit_Framework_Assert::assertContains() must be a array, iterator or string
 
-D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Home_test.php:7
+C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Home_test.php:7
 </error>
       </testcase>
     </testsuite>
-    <testsuite name="Login_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Login_test.php" fullPackage="Login" tests="4" assertions="6" failures="3" errors="0" time="0.354527">
-      <testcase name="test_index" class="Login_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Login_test.php" line="4" assertions="1" time="0.114442">
+    <testsuite name="Login_test" file="C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Login_test.php" fullPackage="Login" tests="4" assertions="6" failures="3" errors="0" time="0.139880">
+      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Login_test.php" line="4" assertions="1" time="0.035039">
         <failure type="PHPUnit_Framework_ExpectationFailedException">Login_test::test_index
 Failed asserting that '&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -184,10 +184,10 @@ Failed asserting that '&lt;!DOCTYPE html&gt;
 &lt;/body&gt;
 &lt;/html&gt;' contains "Booking".
 
-D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Login_test.php:7
+C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Login_test.php:7
 </failure>
       </testcase>
-      <testcase name="test_aksi_login" class="Login_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Login_test.php" line="9" assertions="1" time="0.057809">
+      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Login_test.php" line="9" assertions="1" time="0.036166">
         <failure type="PHPUnit_Framework_ExpectationFailedException">Login_test::test_aksi_login
 URL to redirect is not Redirect to http://localhost/kppllap/index.php/Authen but Redirect to http://localhost/kppllap/index.php/Login.
 Failed asserting that two strings are identical.
@@ -197,29 +197,18 @@ Failed asserting that two strings are identical.
 -Redirect to http://localhost/kppllap/index.php/Authen
 +Redirect to http://localhost/kppllap/index.php/Login
 
-C:\xampp\htdocs\kppllap\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:426
-D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Login_test.php:15
+C:\xampp\htdocs\kppl_futsalin\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:426
+C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Login_test.php:15
 </failure>
       </testcase>
-      <testcase name="test_aksi_login_bukanuser" class="Login_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Login_test.php" line="18" assertions="1" time="0.031056"/>
-      <testcase name="test_keluar" class="Login_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Login_test.php" line="27" assertions="3" time="0.151220">
+      <testcase name="test_aksi_login_bukanuser" class="Login_test" file="C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Login_test.php" line="18" assertions="1" time="0.032156"/>
+      <testcase name="test_keluar" class="Login_test" file="C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Login_test.php" line="27" assertions="3" time="0.036519">
         <failure type="PHPUnit_Framework_ExpectationFailedException">Login_test::test_keluar
 Failed asserting that true is false.
 
-D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Login_test.php:34
+C:\xampp\htdocs\kppl_futsalin\application\tests\controllers\Login_test.php:34
 </failure>
       </testcase>
-    </testsuite>
-    <testsuite name="Welcome_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Welcome_test.php" fullPackage="Welcome" tests="3" assertions="3" failures="1" errors="0" time="0.557327">
-      <testcase name="test_index" class="Welcome_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Welcome_test.php" line="13" assertions="1" time="0.029087">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Welcome_test::test_index
-Failed asserting that 'Welcome/index is not found' contains "&lt;title&gt;Welcome to CodeIgniter&lt;/title&gt;".
-
-D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Welcome_test.php:16
-</failure>
-      </testcase>
-      <testcase name="test_method_404" class="Welcome_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Welcome_test.php" line="19" assertions="1" time="0.026077"/>
-      <testcase name="test_APPPATH" class="Welcome_test" file="D:\ITS\SI\sem5\kppl\kppl_futsalin\application\tests\controllers\Welcome_test.php" line="25" assertions="1" time="0.502163"/>
     </testsuite>
   </testsuite>
 </testsuites>

@@ -49,7 +49,7 @@
             <li class="active"><a href=<?php echo base_url()."index.php"?>>HOME</a></li>
             <li><a href=<?php echo site_url()."About.php"?>>BOOKING</a></li>
             <li><a href=<?php echo base_url()."contact.php"?>>PROFIL</a></li>
-            <li><a href=<?php echo site_url("Login/keluar")?>>LOGOUT</a></li>
+            <li><a href=<?php echo site_url("Logout")?>>LOGOUT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

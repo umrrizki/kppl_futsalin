@@ -1,11 +1,7 @@
 <?php 
  
 class Login extends CI_Controller{
- 
 
-		
-	
- 
 	function index(){
 		$this->load->view('Login');
 	}
@@ -26,13 +22,23 @@ class Login extends CI_Controller{
 				$this->session->set_userdata($data_session);
 			}
 			
-			redirect('Authen');
+			redirect('Login/authenthicate');
  
-		} else{
-            $this->session->set_flashdata('pesan', 'Username dan password salah!');
-	redirect('Login'); } }
 
-	function keluar(){
-		$this->session->sess_destroy();
-	redirect('Login'); }
-}
+		}else{
+                  $this->session->set_flashdata('pesan', 'Username dan password salah!');
+			redirect('Login');
+		}
+       
+	}
+ function authenthicate(){
+		if(!$this->session->userdata('username') ){
+			redirect('Login');
+		
+		 $this->load->helper('url');
+        
+        $this->load->database();}
+        else {redirect('Home');}
+	}
+		  }
+?>

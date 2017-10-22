@@ -19,10 +19,26 @@ class Login_test extends TestCase {
     
     public function test_aksi_login_bukanuser()
     {
-        $_SESSION['id_user'] = "2";
-        $_SESSION['username'] = "xxxxxddddd";
+        $output = $this->request('POST', 'Login/aksi_login',
+                [
+                    'username' => 'salah ini',
+                    'password' => 'passnya salah',
+                ]);
         
-        $output = $this->request('GET', 'Login/aksi_login');
+        $this->assertFalse(isset($_SESSION['username'], $output));
+        $this->assertRedirect('Login');
+    }
+
+    public function test_aksi_login_kosong(){
+
+        $this->request('POST', 'Login/aksi_login',
+                [
+                    'username' => '',
+                    'password' => '',
+                ]);
+
+
+        $this->assertFalse(isset($_SESSION['username']));
         $this->assertRedirect('Login');
     }
 	
@@ -30,12 +46,13 @@ class Login_test extends TestCase {
 		{
        $_SESSION['id_user'] = "1";
        $_SESSION['username'] = "umar";
-            $this->request('GET','Login/aksi_login');
+        $this->request('GET','Login/aksi_login');
         $this->request('GET', 'Login/authenticate');
         
         $this->assertTrue( isset($_SESSION['username']) );
         $this->assertRedirect('Home'); 
 		}
+
     public function test_authenticate_no_session()
         {
         $this->request('GET','Login/aksi_login');    

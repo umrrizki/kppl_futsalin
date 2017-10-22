@@ -15,8 +15,6 @@ class Home_test extends TestCase {
 		$this->assertFalse(isset($_SESSION['username'], $output));
 		$this->assertRedirect('login', $output); 
 		}
-        
-    
-  
+
 }
 ?>

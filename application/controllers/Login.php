@@ -22,7 +22,7 @@ class Login extends CI_Controller{
 				$this->session->set_userdata($data_session);
 			}
 			
-			redirect('Login/authenthicate');
+			redirect('Login/authenticate');
  
 
 		}else{
@@ -31,7 +31,7 @@ class Login extends CI_Controller{
 		}
        
 	}
- function authenthicate(){
+ function authenticate(){
 		if(!$this->session->userdata('username') ){
 			redirect('Login');
 		

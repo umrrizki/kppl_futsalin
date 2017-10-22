@@ -3,17 +3,18 @@
 class Login_test extends TestCase {
     public function test_index()
 	{
-		$output = $this->request('GET', 'Login/index');
-		$this->assertContains('Booking', $output); 
+		$output = $this->request('GET', 'Login');
+		$this->assertContains('<title>Futsal.in : Log In</title>', $output); 
 	}
+
         public function test_aksi_login()
-    {
-        
+    {    
         $output = $this->request('POST', 'Login/aksi_login', 
 					['username' => 'umar',
 					 'password' => 'siapmaju'
 					 ]);
-        $this->assertRedirect('Authen');
+        $this->assertEquals('umar', $_SESSION['username'], $output);
+        $this->assertRedirect('Login/authenticate');
     }
     
     public function test_aksi_login_bukanuser()
@@ -25,7 +26,7 @@ class Login_test extends TestCase {
         $this->assertRedirect('Login');
     }
 	
-	public function test_keluar()
+	public function test_authenticate()
 		{
 		$_SESSION['id_user'] = "1";
         $_SESSION['username'] = "umar";

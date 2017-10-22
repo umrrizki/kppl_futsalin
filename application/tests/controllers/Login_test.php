@@ -26,15 +26,23 @@ class Login_test extends TestCase {
         $this->assertRedirect('Login');
     }
 	
-	public function test_authenticate()
+	public function test_authenticate_ada_session()
 		{
-		$_SESSION['id_user'] = "1";
-        $_SESSION['username'] = "umar";
+       $_SESSION['id_user'] = "1";
+       $_SESSION['username'] = "umar";
+            $this->request('GET','Login/aksi_login');
+        $this->request('GET', 'Login/authenticate');
+        
         $this->assertTrue( isset($_SESSION['username']) );
-        $this->request('GET', 'Login/keluar');
-        $this->assertRedirect('Login');
-        $this->assertFalse( isset($_SESSION['username']) );
+        $this->assertRedirect('Home'); 
 		}
-    
+    public function test_authenticate_no_session()
+        {
+        $this->request('GET','Login/aksi_login');    
+        $this->request('GET', 'Login/authenticate');
+        
+        $this->assertFalse( isset($_SESSION['username']) );
+        $this->assertRedirect('Login');
+        }
   
 }

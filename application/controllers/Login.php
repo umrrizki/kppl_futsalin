@@ -27,8 +27,7 @@ class Login extends CI_Controller{
 
 		else {
                   $this->session->set_flashdata('pesan', 'Username dan password salah!');
-			redirect('Login');
-		}  }
+			redirect('Login'); }  }
 
 
  function authenticate(){

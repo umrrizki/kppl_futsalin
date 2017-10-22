@@ -6,6 +6,6 @@ class Logout extends CI_Controller{
 		parent::__construct();	}
 
  function index(){
-		$this->session->sess_destroy();
+		$this->session->unset_userdata('username');;
 		redirect('Login'); }     }
 ?>

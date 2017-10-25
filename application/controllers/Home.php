@@ -13,8 +13,8 @@ function __construct(){
 
 public function index(){
 
-		$data = $this->Model_futsal->tampil_lapangan();
-		$this->load->view('Home',array('data' => $data));	
+		// $data = $this->Model_futsal->tampil_lapangan();
+		$this->load->view('Home');	
 	}
 
 

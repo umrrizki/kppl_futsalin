@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href=<?php echo base_url()."assets/css/bootstrap.css"?> rel="stylesheet">
-
+    <link href=<?php echo base_url()."assets/css/panel.css"?> rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href=<?php echo base_url()."assets/css/style.css"?> rel="stylesheet">
     <link href=<?php echo base_url()."assets/css/font-awesome.min.css"?> rel="stylesheet">
@@ -46,9 +46,9 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href=<?php echo site_url()."/Home"?>>HOME</a></li>
+            <li><a href=<?php echo site_url()."/Home"?>>HOME</a></li>
             <li><a href="">BOOKING</a></li>
-            <li><a href=<?php echo site_url()."/Profil"?>>PROFIL</a></li>
+            <li class="active"><a href=<?php echo site_url()."/Profil"?>>PROFIL</a></li>
             <li><a href=<?php echo site_url("Logout")?>>LOGOUT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -58,14 +58,20 @@
 	<!-- *****************************************************************************************************************
 	 HEADERWRAP
 	 ***************************************************************************************************************** -->
+
+	 
 	<div id="headerwrap">
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<h1><img src=<?php echo base_url()."assets/img/futsalin.png"?>></h1>
-					<h1>Booking Futsal Secepat Tiket Hotel</h1>
-					<h5>Booking lapangan futsalmu disini dengan mudah dan praktis</h5>
-					<h5>Ajak teman-teman mu bermain futsal bersama</h5>				
+					<h1><strong>PROFIL</strong></h1>
+							 <div class="col-md-12 ">
+                                        <center>
+                                            <a class="" href="#">
+                                                <img class="media-object dp img-circle" src="" style="width: 180px;height:180px;">
+                                            </a>
+                                        </center>
+                                    </div>
 				</div>
 				<div class="col-lg-8 col-lg-offset-2 himg">
 				
@@ -77,48 +83,51 @@
 	<!-- *****************************************************************************************************************
 	 SERVICE LOGOS
 	 ***************************************************************************************************************** -->
-	 <div id="service">
-	 	<div class="container">
- 			<div class="row centered">
- 				<div class="col-md-4">
- 					<i class="fa fa-heart-o"></i>
- 					<h4>Praktis</h4>
- 					<p>Sistem ini bisa di akses di manapun kamu berada! Praktis digunakan di gadget manapun!</p>
- 					<!--<p><br/><a href="#" class="btn btn-theme">More Info</a></p>-->
- 				</div>
- 				<div class="col-md-4">
- 					<i class="fa fa-flask"></i>
- 					<h4>Mudah Digunakan</h4>
- 					<p>Sistem ini mudah digunakan. Hanya klik Booking dan temukan lapangan yang ingin kamu tuju!</p>
- 				<!--	<p><br/><a href="#" class="btn btn-theme">More Info</a></p>-->
- 				</div>
- 				<div class="col-md-4">
- 					<i class="fa fa-trophy"></i>
- 					<h4>Terpercaya</h4>
- 					<p>Sistem ini terpercaya dibuktikan dengan sudah banyak partner yang berkerja sama bersama kami</p>
- 				<!--	<p><br/><a href="#cwrap" class="btn btn-theme">More Info</a></p>-->
- 				</div>		 				
-	 		</div>
-	 	</div><! --/container -->
-	 </div><! --/service -->
-	 
+	
 	<!-- 
 -->
-	 <div id="twrap">
-	 	<div class="container centered">
-	 		<div class="row">
-	 			<div class="col-lg-8 col-lg-offset-2">
-	 			<i class="fa fa-comment-o"></i>
-	 			<p>Dengan adanya web ini, pelanggan dimudahkan untuk booking tempat futsal tanpa harus pergi ke tempat futsalnya secara langsung. Dijamin web ini mudah digunakan dan FREE!</p>
-	 			<h4><br/>Setya Novanto</h4>
-	 			<p>Ketua DPR</p>
-	 			</div>
-	 			
-					
-	 		</div><! --/row -->
-	 	</div><! --/container -->
-	 </div><! --/twrap -->
-	 
+
+	 <!--Pulling Awesome Font -->
+ <link href="" rel="stylesheet">
+   
+ <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><img src="" /></div>
+                            <div class="panel-body text-left">
+                                <div class="row">
+                                   
+                                    <div class="col-md-12">
+
+                                        <h2><?php?></h2>
+                                        <p>Software Developer at ceymplon</p>
+                                        <p>
+                                            <a href="#" class="remove-decoration"><i class="glyphicon glyphicon-envelope"></i> poolsachitha@gmail.com</a> <br>
+                                            <a href="http://sachitha-seram.branded.me/" target="_blank" class="remove-decoration"><i class="glyphicon glyphicon-globe"></i> www.sachitha-seram.branded.me </a><br>
+                                            <a href="#" class="remove-decoration"> <i class="glyphicon glyphicon-phone"></i> +94 710 000 000</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="IdFooter" class="panel-footer text-right">
+
+                                <ul class="social-network social-circle">
+                                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                                    <li><a href="https://www.facebook.com/blood.pssus" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="https://lk.linkedin.com/pub/sachitha-seram/85/a2a/618" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-4"></div>
+                </div>
+        </div>
+    </div>
 	<!-- *****************************************************************************************************************
 	 OUR CLIENTS
 	 ***************************************************************************************************************** -->

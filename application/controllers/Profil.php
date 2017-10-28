@@ -44,21 +44,10 @@ public function edit_profil(){
 		if(! $this->upload->do_upload('file1')){//$poi=$this->upload->display_errors(); echo $poi;
         $data_update = array('quote' => $quote, 'alamat_user' => $alamat , 'ttl_user' =>$ttl, 'phone_user' => $phone, 'deskripsi'=>$deskripsi);
         $this->Model_futsal->UpdateData('user',$data_update,$where);
-           redirect('Profil');
-            
-        } else { 
+           redirect('Profil'); } else { 
             $this->upload->do_upload('file1');
            $data_update = array('quote' => $quote, 'alamat_user' => $alamat , 'ttl_user' =>$ttl, 'phone_user' => $phone, 'deskripsi'=>$deskripsi, 'image'=>$file1);
             $this->Model_futsal->UpdateData('user',$data_update,$where);
-			redirect('Profil');
-            
-		
-        }
-        
-
-
-}
-
-}
+			redirect('Profil'); }}}
 
 ?>

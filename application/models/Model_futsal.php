@@ -17,9 +17,9 @@ class Model_futsal extends CI_Model {
 	// }
 
 	function tampil_profil($id){
-		$this->db->where('id_user',$id);
+		//$this->db->where('id_user',$id);
 
-		$data = $this->db->get('user');
+		$data = $this->db->query('select * from user where id_user='.$id);
 		return $data->result_array();
 
 	}
@@ -31,10 +31,10 @@ class Model_futsal extends CI_Model {
      return $this->db->get_where($table,$where);
    }*/
 
-   function update_data($where,$data,$table) {
-     $this->db->where($where);
-     $this->db->update($table,$data);
-   }
+   public function UpdateData($tableName,$data,$where){
+		$res = $this->db->update($tableName,$data,$where);
+		return $res;
+	}
  //  function hapus_data($where,$table){
  //    $this->db->where($where);
  //    $this->db->delete($table);

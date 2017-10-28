@@ -59,7 +59,7 @@
 	 HEADERWRAP
 	 ***************************************************************************************************************** -->
 
-	 
+	 <?php foreach($data as $x) { ?>
 	<div id="headerwrap">
 	    <div class="container">
 			<div class="row">
@@ -67,10 +67,11 @@
 					<h1><strong>PROFIL</strong></h1>
 							 <div class="col-md-12 ">
                                         <center>
-                                            <a class="" href="#">
-                                                <img class="media-object dp img-circle" src="" style="width: 180px;height:180px;">
+                                            <a class="" href="<?php echo base_url($x['image']); ?>">
+                                                <img class="media-object dp img-circle" src="<?php echo base_url($x['image']); ?>" style="width: 180px;height:180px;">
                                             </a>
                                         </center>
+                                        <h3><?php echo $x['nama_pjg']; ?></h3>
                                     </div>
 				</div>
 				<div class="col-lg-8 col-lg-offset-2 himg">
@@ -96,31 +97,36 @@
                 <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <div class="panel panel-default">
-                            <div class="panel-heading"><img src="" /></div>
+                           
                             <div class="panel-body text-left">
                                 <div class="row">
                                    
                                     <div class="col-md-12">
-
-                                        <h2><?php?></h2>
-                                        <p>Software Developer at ceymplon</p>
+                                    	
+                                        <h2> </h2>
+                                        <p><i><?php echo $x['quote']; ?></i></p>
                                         <p>
-                                            <a href="#" class="remove-decoration"><i class="glyphicon glyphicon-envelope"></i> poolsachitha@gmail.com</a> <br>
-                                            <a href="http://sachitha-seram.branded.me/" target="_blank" class="remove-decoration"><i class="glyphicon glyphicon-globe"></i> www.sachitha-seram.branded.me </a><br>
-                                            <a href="#" class="remove-decoration"> <i class="glyphicon glyphicon-phone"></i> +94 710 000 000</a>
+                                            <i class="glyphicon glyphicon-home"></i> <?php echo $x['alamat_user']; ?> <br>
+                                            <i class="glyphicon glyphicon-file"></i> <?php echo $x['ttl_user']; ?> <br>
+                                             <i class="glyphicon glyphicon-phone"></i> <?php echo $x['phone_user']; ?><br><br>
+                                             <i class=""></i> <?php echo $x['deskripsi']; ?>
+
+                                              <?php } ?>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div id="IdFooter" class="panel-footer text-right">
 
-                                <ul class="social-network social-circle">
+<a class="btn btn-default" href="#" data-toggle="modal" data-target="#EditModal"><?php  ?>Edit</a>
+
+                               <!--  <ul class="social-network social-circle">
                                     <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
                                     <li><a href="https://www.facebook.com/blood.pssus" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
                                     <li><a href="https://lk.linkedin.com/pub/sachitha-seram/85/a2a/618" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </div>
@@ -128,28 +134,55 @@
                 </div>
         </div>
     </div>
-	<!-- *****************************************************************************************************************
-	 OUR CLIENTS
-	 ***************************************************************************************************************** -->
-	 	 <div id="cwrap">
-		 <div class="container">
-		 	<div class="row centered">
-			 	<h3>OUR PARTNERS</h3>
-			 	<div class="col-lg-3 col-md-3 col-sm-3">
-			 		<img src=<?php echo base_url()."assets/img/clients/clientt1.jpg"?> class="img-responsive">
-			 	</div>
-			 	<div class="col-lg-3 col-md-3 col-sm-3">
-			 		<img src=<?php echo base_url()."assets/img/clients/clientt2.png"?> class="img-responsive">
-			 	</div>
-			 	<div class="col-lg-3 col-md-3 col-sm-3">
-			 		<img src=<?php echo base_url()."assets/img/clients/clientt3.png"?> class="img-responsive">
-			 	</div>
-			 	<div class="col-lg-3 col-md-3 col-sm-3">
-			 		<img src=<?php echo base_url()."assets/img/clients/clientt4.jpg"?> class="img-responsive">
-			 	</div>
-		 	</div><! --/row -->
-		 </div><! --/container -->
-	 </div><! --/cwrap -->
+	
+<div id="EditModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Edit Data Profil</h4>
+      </div>
+      <form method="POST" action="<?php echo site_url()."/Profil/edit_profil/"; ?>" enctype='multipart/form-data'>
+      <div class="modal-body">
+        <div class="form-group"> 
+		  <label for="comment">Quote</label>
+		  <textarea type="text" class="form-control" name="quote" required=""><?php echo $x['quote']; ?></textarea>
+		</div>
+        <div class="form-group">
+		  <label for="comment">Alamat</label>
+		  <input type="text" class="form-control" name="alamat" required="" value="<?php echo $x['alamat_user']; ?>">
+		</div>
+        <div class="form-group">
+		  <label for="comment">Tanggal Lahir</label>
+		  <input type="text" class="form-control" name="ttl" required="" value="<?php echo $x['ttl_user']; ?>">
+		</div>	
+			<div class="form-group">
+		  <label for="comment">Nomor Telepon</label>
+		  <input type="text" class="form-control" name="phone" required=""  value="<?php echo $x['phone_user']; ?>">
+		  <!-- <input type="text" class="form-control" name="deskripsi" required=""> -->
+		</div>
+        <div class="form-group">
+		  <label for="comment">Deskripsi</label>
+		  <textarea type="text" class="form-control" name="deskripsi" required="" ><?php echo $x['deskripsi']; ?></textarea>
+		  <!-- <input type="text" class="form-control" name="deskripsi" required=""> -->
+		</div>					
+		<div class="form-group">
+		  <label for="comment">Gambar</label>
+		  <input type="file" name="file1">
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-default">Kirim</button>
+      </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
 
 	<!-- *****************************************************************************************************************
 	 FOOTER

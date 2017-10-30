@@ -48,6 +48,8 @@ public function edit_profil(){
             $this->upload->do_upload('file1');
            $data_update = array('quote' => $quote, 'alamat_user' => $alamat , 'ttl_user' =>$ttl, 'phone_user' => $phone, 'deskripsi'=>$deskripsi, 'image'=>$file1);
             $this->Model_futsal->UpdateData('user',$data_update,$where);
-			redirect('Profil'); }}}
+			redirect('Profil'); }}
+
+		}
 
 ?>

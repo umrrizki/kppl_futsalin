@@ -34,8 +34,8 @@ public function edit_profil(){
         
         $this->upload->initialize($config);
  //$file1=('assets/img/'.$_FILES['file1']['name']);
-   $file1 = trim(addslashes('assets/img/'.$_FILES['file1']['name']));     
-    $file1 = preg_replace('/\s+/', '_', $file1);
+   // $file1 = trim(addslashes('assets/img/'.$_FILES['file1']['name']));     
+   //  $file1 = preg_replace('/\s+/', '_', $file1);
 
         $id=$this->session->userdata('id_user');
 		

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1509351344">
-  <project timestamp="1509351344">
+<coverage generated="1509353732">
+  <project timestamp="1509353732">
     <file name="C:\xampp\htdocs\futsal\kppl_futsalin\application/controllers/Home.php">
       <class name="Home" namespace="global">
         <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
@@ -59,7 +59,7 @@
     </file>
     <file name="C:\xampp\htdocs\futsal\kppl_futsalin\application/controllers/Profil.php">
       <class name="Profil" namespace="global">
-        <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="28" elements="35" coveredelements="31"/>
+        <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="26" elements="33" coveredelements="29"/>
       </class>
       <line num="5" type="method" name="__construct" crap="2" count="4"/>
       <line num="6" type="stmt" count="4"/>
@@ -72,7 +72,7 @@
       <line num="17" type="stmt" count="1"/>
       <line num="18" type="stmt" count="1"/>
       <line num="19" type="stmt" count="1"/>
-      <line num="21" type="method" name="edit_profil" crap="2.02" count="2"/>
+      <line num="21" type="method" name="edit_profil" crap="2.03" count="2"/>
       <line num="23" type="stmt" count="2"/>
       <line num="24" type="stmt" count="2"/>
       <line num="25" type="stmt" count="2"/>
@@ -84,8 +84,6 @@
       <line num="32" type="stmt" count="2"/>
       <line num="33" type="stmt" count="2"/>
       <line num="35" type="stmt" count="2"/>
-      <line num="37" type="stmt" count="2"/>
-      <line num="38" type="stmt" count="2"/>
       <line num="40" type="stmt" count="2"/>
       <line num="42" type="stmt" count="2"/>
       <line num="44" type="stmt" count="2"/>
@@ -97,7 +95,7 @@
       <line num="50" type="stmt" count="0"/>
       <line num="51" type="stmt" count="0"/>
       <line num="56" type="stmt" count="1"/>
-      <metrics loc="55" ncloc="51" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="28" elements="35" coveredelements="30"/>
+      <metrics loc="55" ncloc="47" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="26" elements="33" coveredelements="28"/>
     </file>
     <file name="C:\xampp\htdocs\futsal\kppl_futsalin\application/models/Model_futsal.php">
       <class name="Model_futsal" namespace="global" fullPackage="Model">
@@ -115,6 +113,6 @@
       <line num="36" type="stmt" count="2"/>
       <metrics loc="42" ncloc="14" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="10" coveredelements="10"/>
     </file>
-    <metrics files="5" loc="167" ncloc="133" classes="5" methods="13" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="70" coveredstatements="65" elements="83" coveredelements="76"/>
+    <metrics files="5" loc="167" ncloc="129" classes="5" methods="13" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="68" coveredstatements="63" elements="81" coveredelements="74"/>
   </project>
 </coverage>

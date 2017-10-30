@@ -55,7 +55,7 @@ class Profil_test extends TestCase {
 			'Profil/edit_profil', $expected
 		);
 
-		$indb = array($this->objek->tampil_profil($_SESSION['id_user']));
+		$indb = array($this->objek->tampil_profil(1));
 
 			$this->assertEquals($expected,$indb);
 	}

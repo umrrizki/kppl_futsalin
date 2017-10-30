@@ -1,50 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="19" assertions="35" failures="1" errors="0" time="0.927773">
-    <testsuite name="Home_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Home_test.php" fullPackage="Home" tests="2" assertions="3" failures="0" errors="0" time="0.063472">
-      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Home_test.php" line="4" assertions="1" time="0.034718"/>
-      <testcase name="test_index_bukansessionnya" class="Home_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Home_test.php" line="11" assertions="2" time="0.028754"/>
+  <testsuite name="CodeIgniter Application Test Suite" tests="19" assertions="35" failures="1" errors="0" time="0.984171">
+    <testsuite name="Home_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Home_test.php" fullPackage="Home" tests="2" assertions="3" failures="0" errors="0" time="0.067816">
+      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Home_test.php" line="4" assertions="1" time="0.038728"/>
+      <testcase name="test_index_bukansessionnya" class="Home_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Home_test.php" line="11" assertions="2" time="0.029088"/>
     </testsuite>
-    <testsuite name="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" fullPackage="Login" tests="12" assertions="23" failures="0" errors="0" time="0.406391">
-      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="6" assertions="1" time="0.029808"/>
-      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="12" assertions="2" time="0.043885"/>
-      <testcase name="test_aksi_login_bukanuser" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="22" assertions="2" time="0.029354"/>
-      <testcase name="test_aksi_login_userbenar" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="34" assertions="2" time="0.029385"/>
-      <testcase name="test_aksi_login_usersalah" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="46" assertions="2" time="0.029825"/>
-      <testcase name="test_aksi_login_kosong" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="58" assertions="2" time="0.029859"/>
-      <testcase name="test_aksi_login_userisibenar" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="71" assertions="2" time="0.029516"/>
-      <testcase name="test_aksi_login_userisisalah" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="84" assertions="2" time="0.031408"/>
-      <testcase name="test_aksi_login_passwdisibenar" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="97" assertions="2" time="0.029726"/>
-      <testcase name="test_aksi_login_passwdisisalah" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="110" assertions="2" time="0.031141"/>
-      <testcase name="test_authenticate_ada_session" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="123" assertions="2" time="0.046107"/>
-      <testcase name="test_authenticate_no_session" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="134" assertions="2" time="0.046377"/>
+    <testsuite name="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" fullPackage="Login" tests="12" assertions="23" failures="0" errors="0" time="0.455452">
+      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="6" assertions="1" time="0.032996"/>
+      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="12" assertions="2" time="0.045058"/>
+      <testcase name="test_aksi_login_bukanuser" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="22" assertions="2" time="0.032747"/>
+      <testcase name="test_aksi_login_userbenar" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="34" assertions="2" time="0.033517"/>
+      <testcase name="test_aksi_login_usersalah" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="46" assertions="2" time="0.033143"/>
+      <testcase name="test_aksi_login_kosong" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="58" assertions="2" time="0.032374"/>
+      <testcase name="test_aksi_login_userisibenar" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="71" assertions="2" time="0.032217"/>
+      <testcase name="test_aksi_login_userisisalah" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="84" assertions="2" time="0.032818"/>
+      <testcase name="test_aksi_login_passwdisibenar" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="97" assertions="2" time="0.034226"/>
+      <testcase name="test_aksi_login_passwdisisalah" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="110" assertions="2" time="0.032631"/>
+      <testcase name="test_authenticate_ada_session" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="123" assertions="2" time="0.061712"/>
+      <testcase name="test_authenticate_no_session" class="Login_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Login_test.php" line="134" assertions="2" time="0.052013"/>
     </testsuite>
-    <testsuite name="Logout_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Logout_test.php" fullPackage="Logout" tests="1" assertions="3" failures="0" errors="0" time="0.025090">
-      <testcase name="test_index" class="Logout_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Logout_test.php" line="4" assertions="3" time="0.025090"/>
+    <testsuite name="Logout_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Logout_test.php" fullPackage="Logout" tests="1" assertions="3" failures="0" errors="0" time="0.028956">
+      <testcase name="test_index" class="Logout_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Logout_test.php" line="4" assertions="3" time="0.028956"/>
     </testsuite>
-    <testsuite name="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" fullPackage="Profil" tests="4" assertions="6" failures="1" errors="0" time="0.432820">
-      <testcase name="test_index" class="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" line="15" assertions="1" time="0.054600"/>
-      <testcase name="test_index_notlogged" class="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" line="22" assertions="2" time="0.039557"/>
-      <testcase name="test_edit_profil" class="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" line="28" assertions="1" time="0.180090">
+    <testsuite name="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" fullPackage="Profil" tests="4" assertions="6" failures="1" errors="0" time="0.431947">
+      <testcase name="test_index" class="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" line="15" assertions="1" time="0.059666"/>
+      <testcase name="test_index_notlogged" class="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" line="22" assertions="2" time="0.045271"/>
+      <testcase name="test_edit_profil" class="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" line="28" assertions="1" time="0.184605">
         <failure type="PHPUnit_Framework_ExpectationFailedException">Profil_test::test_edit_profil
-Failed asserting that two arrays are equal.
---- Expected
-+++ Actual
-@@ @@
- Array (
--    'quote' =&gt; 'hh'
--    'alamat_user' =&gt; 'jets'
--    'ttl_user' =&gt; '17/09'
--    'phone_user' =&gt; '078'
--    'deskripsi' =&gt; 'singat'
--    'image' =&gt; 'assets/img/up.png'
-+    0 =&gt; Array (...)
- )
+Failed asserting that null matches expected 'hh'.
 
-C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php:60
+C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php:66
 </failure>
       </testcase>
-      <testcase name="test_edit_profil_nouploadfalse" class="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" line="63" assertions="2" time="0.158573"/>
+      <testcase name="test_edit_profil_nouploadfalse" class="Profil_test" file="C:\xampp\htdocs\futsal\kppl_futsalin\application\tests\controllers\Profil_test.php" line="74" assertions="2" time="0.142405"/>
     </testsuite>
   </testsuite>
 </testsuites>

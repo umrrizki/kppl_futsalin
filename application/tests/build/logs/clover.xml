@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1509333403">
-  <project timestamp="1509333403">
+<coverage generated="1509347643">
+  <project timestamp="1509347643">
     <file name="C:\xampp\htdocs\futsal\kppl_futsalin\application/controllers/Home.php">
       <class name="Home" namespace="global">
         <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>

@@ -6,7 +6,7 @@ class Profil_test extends TestCase {
         {
             $this->resetInstance();
             $this->CI->load->model('Model_futsal');
-            $this->objek = $this->CI->Model_futsal;
+            // $this->objek = $this->CI->Model_futsal;
             $this->form_validation = new CI_Form_validation();
              
         }
@@ -55,9 +55,20 @@ class Profil_test extends TestCase {
 			'Profil/edit_profil', $expected
 		);
 
-		$indb = array($this->objek->tampil_profil(1));
+		$updated = $this->CI->Model_futsal->tampil_profil(1);
+		$actual = $updated->quote;
+		$actual2 = $updated->alamat_user;
+		$actual3 = $updated->ttl_user;
+		$actual4 = $updated->phone_user;
+		$actual5 = $updated->deskripsi;
+		$actual6 = $updated->image;
 
-			$this->assertEquals($expected,$indb);
+			$this->assertEquals('hh',$actual);
+			$this->assertEquals('jets',$actual2);
+			$this->assertEquals('17/09',$actual3);
+			$this->assertEquals('078',$actual4);
+			$this->assertEquals('singat',$actual5);
+			$this->assertEquals('assets/img/up.png',$actual6);
 	}
 	
 	public function test_edit_profil_nouploadfalse(){
